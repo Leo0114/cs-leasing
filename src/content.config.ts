@@ -12,14 +12,12 @@ const vehicles = defineCollection({
       modelo: z.string(),
       version: z.string(),
       año: z.number().int(),
-      kilometraje: z.number().int().nonnegative(),
+      kilometraje: z.number().int().nonnegative().optional(),
       transmision: z.enum(["Automática", "Manual", "CVT", "Automatizada"]),
       combustible: z.enum(["Gasolina", "Diésel", "Híbrido", "Eléctrico"]),
       slug: z.string(),
       descripcion: z.string(),
       destacado: z.boolean().default(false),
-
-      // Optional: folder name inside src/assets/images/gal/ for the Gallery component.
       galeria: z.string().optional(),
       equipamiento: z.array(z.string()).optional(),
     }),
