@@ -1,6 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import HomeSlider from "@/components/home/HomeSlider";
+import Hero from "@/components/home/Hero.astro";
+import WhyUs from "@/components/home/WhyUs.astro";
+import TradeIn from "@/components/home/TradeIn.astro";
 import CTA from "@/components/shared/CTA.astro";
+import carImage from "@/assets/car.webp";
 
 const values = [
   {
@@ -43,7 +48,11 @@ const stats = [
   title="Acerca de — C&S Leasing"
   description="Conoce a C&S Leasing: seleccionamos vehículos seminuevos premium con transparencia, calidad y cercanía."
 >
-  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+  <HomeSlider client:load carImage={carImage} />
+
+  <Hero />
+
+  <!-- <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">
       Sobre C&amp;S Leasing
     </h1>
@@ -56,7 +65,7 @@ const stats = [
       No somos un lote más. Somos un equipo que cuida cada detalle para que
       estrenes con total confianza.
     </p>
-  </section>
+  </section> -->
 
   <!-- Stats section with icons -->
   <section class="border-y border-border bg-muted">
@@ -97,12 +106,17 @@ const stats = [
               <Fragment set:html={v.icon} />
             </div>
             <h3 class="mt-5 text-base font-semibold">{v.title}</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{v.body}</p>
+            <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {v.body}
+            </p>
           </div>
         ))
       }
     </div>
   </section>
+  <WhyUs />
+
+  <TradeIn />
 
   <CTA />
 </Layout>
