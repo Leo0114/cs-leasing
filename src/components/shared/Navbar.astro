@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Button from "@/components/ui/Button.astro";
 import ThemeToggle from "@/components/shared/ThemeToggle.astro";
 import logo from "@/assets/logo.avif";
+import logo2 from "@/assets/hdLogo.png";
 import { whatsappLink } from "@/lib/site";
 
 const wa = whatsappLink(
@@ -29,9 +30,9 @@ const isActive = (href: string) =>
   >
     <a href="/" class="flex items-center" aria-label="C&S Leasing — Inicio">
       <Image
-        src={logo}
+        src={logo2}
         alt="C&S Leasing"
-        height={36}
+        height={100}
         class="h-9 w-auto object-contain"
       />
     </a>

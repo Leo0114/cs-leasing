@@ -65,7 +65,7 @@ export default function HomeSlider({ carImage }: HomeSliderProps) {
         }}
         navigation={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="h-[75vh] min-h-[500px] sm:h-[80vh] sm:min-h-[600px] w-full"
+        className="h-[75vh] min-h-125 sm:h-[80vh] sm:min-h-150 w-full"
       >
         {slidesData.map((slide, index) => {
           const isActive = activeIndex === index;
