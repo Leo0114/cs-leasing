@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
-
 interface HomeSliderProps {
   carImage: ImageMetadata | string;
 }
@@ -138,7 +137,7 @@ export default function HomeSlider({ carImage }: HomeSliderProps) {
                           className="mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto"
                         >
                           <a
-                            href="/inventario"
+                            href="/"
                             className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-md transition-all duration-150 hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
                           >
                             Ver inventario
