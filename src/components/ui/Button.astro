@@ -1,9 +1,4 @@
 ---
-/**
- * Button — single responsibility: render a styled action as either a
- * `<button>` or an `<a>` (when `href` is provided). No animations, no complex
- * hover states; only a flat color change on hover per the design constraints.
- */
 interface Props {
   variant?: "primary" | "secondary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
@@ -28,8 +23,7 @@ const base =
 const variants = {
   primary: "bg-primary text-primary-foreground hover:bg-primary/90",
   secondary: "bg-accent text-accent-foreground hover:bg-accent/90",
-  outline:
-    "border border-border bg-background text-foreground hover:bg-muted",
+  outline: "border border-border bg-background text-foreground hover:bg-muted",
   ghost: "text-foreground hover:bg-muted",
 };
 
@@ -43,11 +37,6 @@ const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
 const Tag = href ? "a" : "button";
 ---
 
-<Tag
-  class={classes}
-  href={href}
-  type={href ? undefined : type}
-  {...rest}
->
+<Tag class={classes} href={href} type={href ? undefined : type} {...rest}>
   <slot />
 </Tag>

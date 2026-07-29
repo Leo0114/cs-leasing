@@ -4,7 +4,6 @@ import VehicleCard from "@/components/inventario/VehicleCard.astro";
 
 const vehicles = await getCollection("vehicles");
 
-// Default order matches the "Destacados" sort option (SSR === client default).
 vehicles.sort((a, b) => {
   const d = Number(b.data.destacado) - Number(a.data.destacado);
   return d !== 0 ? d : a.data.precio - b.data.precio;
@@ -23,7 +22,7 @@ vehicles.sort((a, b) => {
             Una selección de nuestras mejores unidades.
           </p>
         </div>
-        
+
         <div class="flex items-center gap-3">
           <span class="text-sm text-muted-foreground shrink-0">
             <span>{vehicles.length}</span> vehículos
@@ -41,15 +40,27 @@ vehicles.sort((a, b) => {
               <option value="km-asc">Menor kilometraje</option>
             </select>
             <div class="pointer-events-none absolute inset-y-0 right-2.5 flex items-center text-muted-foreground">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9"></polyline>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
               </svg>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="featured-grid" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        id="featured-grid"
+        class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {vehicles.map((vehicle) => (
           <VehicleCard vehicle={vehicle} />
         ))}
@@ -72,8 +83,12 @@ vehicles.sort((a, b) => {
     const grid = document.getElementById("featured-grid");
     if (!grid) return;
 
-    const cards = Array.from(grid.querySelectorAll<HTMLElement>("[data-vehicle]"));
-    const sort = document.getElementById("featured-sort-select") as HTMLSelectElement;
+    const cards = Array.from(
+      grid.querySelectorAll<HTMLElement>("[data-vehicle]"),
+    );
+    const sort = document.getElementById(
+      "featured-sort-select",
+    ) as HTMLSelectElement;
     if (!sort) return;
 
     const num = (el: HTMLElement, k: string) => Number(el.dataset[k]);
@@ -90,21 +105,20 @@ vehicles.sort((a, b) => {
             return num(b, "anio") - num(a, "anio");
           case "km-asc":
             return num(a, "km") - num(b, "km");
-          default: // destacado
-            const diff = Number(b.dataset.destacado === "true") - Number(a.dataset.destacado === "true");
+          default:
+            const diff =
+              Number(b.dataset.destacado === "true") -
+              Number(a.dataset.destacado === "true");
             return diff !== 0 ? diff : num(a, "precio") - num(b, "precio");
         }
       });
 
-      // Append in sorted order
       sorted.forEach((c) => grid.appendChild(c));
     };
 
     sort.addEventListener("change", sortCards);
-    // Initial run
     sortCards();
   }
 
   document.addEventListener("astro:page-load", initFeaturedCars);
 </script>
-

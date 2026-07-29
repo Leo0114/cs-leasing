@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { whatsappLink } from "@/lib/site";
 import type { ImageMetadata } from "astro";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";

@@ -17,7 +17,7 @@ const { vehicles } = Astro.props;
     {vehicles.map((vehicle) => <VehicleCard vehicle={vehicle} />)}
   </div>
 
-  <!-- Empty state, revealed by the filter controller when nothing matches -->
+  <!-- Empty state -->
   <p
     id="vehicle-empty"
     hidden

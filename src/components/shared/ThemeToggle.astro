@@ -1,7 +1,5 @@
 ---
-// ThemeToggle — renders an accessible button that switches dark/light.
-// The inline script in Layout.astro handles initialisation to avoid FOUC;
-// this script only manages the toggle interaction and label sync.
+
 ---
 
 <button
@@ -10,7 +8,7 @@
   aria-label="Cambiar tema de color"
   class="inline-flex h-9 w-9 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring cursor-pointer"
 >
-  <!-- Moon icon — shown in light mode -->
+  <!-- Moon icon -->
   <svg
     data-icon-moon
     xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +24,7 @@
   >
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
-  <!-- Sun icon — shown in dark mode -->
+  <!-- Sun icon -->
   <svg
     data-icon-sun
     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +64,7 @@
 
   function setupThemeToggle() {
     syncIcons();
-    
+
     const buttons = document.querySelectorAll("[data-theme-toggle]");
     buttons.forEach((btn) => {
       // Evitar doble binding en el mismo elemento
@@ -83,7 +81,6 @@
     });
   }
 
-  // Ejecutar en carga inicial y navegaciones
   setupThemeToggle();
   document.addEventListener("astro:page-load", setupThemeToggle);
 </script>
