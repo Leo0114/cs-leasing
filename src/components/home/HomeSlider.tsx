@@ -19,25 +19,25 @@ const slidesData = [
     tag: "Seminuevos premium",
     title: "El auto que buscas, con la confianza que mereces.",
     description:
-      "Inventario seleccionado y verificado, precios claros y atención directa. Sin letras chiquitas, sin presiones.",
+      "Inventario cuidadosamente seleccionado, vehículos verificados y atención personalizada.",
   },
-  {
-    tag: "Calidad Garantizada",
-    title: "Financiamiento flexible y a tu medida.",
-    description:
-      "Opciones de crédito y arrendamiento adaptadas a tus necesidades. Estrena hoy mismo con las mejores tasas.",
-  },
-  {
-    tag: "Toma a Cuenta",
-    title: "Evaluamos tu auto actual al mejor precio.",
-    description:
-      "Recibimos tu vehículo a cuenta con un proceso rápido, seguro y transparente. Ahorra tiempo y dinero.",
-  },
+  // {
+  //   tag: "Calidad Garantizada",
+  //   title: "Financiamiento flexible y a tu medida.",
+  //   description:
+  //     "Opciones de crédito y arrendamiento adaptadas a tus necesidades. Estrena hoy mismo con las mejores tasas.",
+  // },
+  // {
+  //   tag: "Toma a Cuenta",
+  //   title: "Evaluamos tu auto actual al mejor precio.",
+  //   description:
+  //     "Recibimos tu vehículo a cuenta con un proceso rápido, seguro y transparente. Ahorra tiempo y dinero.",
+  // },
   {
     tag: "Atención Exclusiva",
-    title: "Experiencia de compra premium digital.",
+    title: "Comprar tu próximo auto nunca fue tan fácil.",
     description:
-      "Reserva, cotiza y realiza todo tu trámite en línea con el soporte personalizado de nuestros asesores.",
+      "Consulta el inventario, resuelve tus dudas y recibe atención personalizada en todo momento.",
   },
 ];
 
