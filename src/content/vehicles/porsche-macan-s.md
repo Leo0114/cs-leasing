@@ -10,7 +10,8 @@ transmision: Automática
 combustible: Gasolina
 slug: porsche-macan-s
 descripcion: Porsche Macan S 2020. Equipado con un potente motor 3.0L Turbo, ofrece un rendimiento vibrante. Una excelente puerta de entrada al excitante mundo de las SUVs de Porsche.
-destacado: false
+destacado: true
+disponible: true
 equipamiento:
   - Motor 3.0L V6 Turbo
   - Transmisión PDK

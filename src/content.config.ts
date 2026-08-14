@@ -17,6 +17,7 @@ const vehicles = defineCollection({
       combustible: z.enum(["Gasolina", "Diésel", "Híbrido", "Eléctrico"]),
       slug: z.string(),
       descripcion: z.string(),
+      disponible: z.boolean().default(true),
       destacado: z.boolean().default(false),
       galeria: z.string().optional(),
       equipamiento: z.array(z.string()).optional(),

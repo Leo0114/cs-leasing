@@ -11,6 +11,7 @@ combustible: Gasolina
 slug: peugeot-landtrek-allure
 descripcion: Peugeot Landtrek Allure 2023. Una pick-up robusta, confiable y con el distintivo estilo francés. Excelente capacidad de carga y confort superior para 5 pasajeros.
 destacado: false
+disponible: false
 equipamiento:
   - Motor 2.4L 4 cilindros
   - Transmisión manual

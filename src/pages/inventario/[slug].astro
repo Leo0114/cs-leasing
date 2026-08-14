@@ -13,7 +13,7 @@ const { slug } = Astro.params;
 const vehicles = await getCollection("vehicles");
 const vehicle = vehicles.find((v) => v.data.slug === slug);
 
-if (!vehicle) {
+if (!vehicle || !vehicle.data.disponible) {
   return Astro.redirect("/inventario");
 }
 

@@ -6,7 +6,8 @@ import SidebarFilters from "@/components/inventario/SidebarFilters.astro";
 import InventoryGrid from "@/components/inventario/InventoryGrid.astro";
 import { whatsappLink } from "@/lib/site";
 
-const vehicles = await getCollection("vehicles");
+const allVehicles = await getCollection("vehicles");
+const vehicles = allVehicles.filter((v) => v.data.disponible);
 
 // Default order matches the "Destacados" sort option (SSR === client default).
 vehicles.sort((a, b) => {

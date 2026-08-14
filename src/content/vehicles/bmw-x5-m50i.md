@@ -10,7 +10,8 @@ transmision: Automática
 combustible: Gasolina
 slug: bmw-x5-m50i
 descripcion: BMW X5 M50i 2021. El equilibrio perfecto entre confort familiar y prestaciones de la división M. Potencia turbo y lujo interior en una SUV sumamente capaz.
-destacado: false
+destacado: true
+disponible: true
 equipamiento:
   - Motor V8 TwinPower Turbo
   - Tracción integral xDrive

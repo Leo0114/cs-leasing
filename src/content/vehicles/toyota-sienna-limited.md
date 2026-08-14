@@ -11,6 +11,7 @@ combustible: Gasolina
 slug: toyota-sienna-limited
 descripcion: Toyota Sienna Limited 2020. La minivan por excelencia que ofrece máxima confiabilidad, espacio incomparable y el más alto nivel de equipamiento de su gama.
 destacado: false
+disponible: false
 equipamiento:
   - Motor V6 de 3.5L
   - Puertas y compuerta trasera eléctricas

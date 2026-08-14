@@ -2,7 +2,8 @@
 import { getCollection } from "astro:content";
 import VehicleCard from "@/components/inventario/VehicleCard.astro";
 
-const vehicles = await getCollection("vehicles");
+const allVehicles = await getCollection("vehicles");
+const vehicles = allVehicles.filter((v) => v.data.disponible);
 
 vehicles.sort((a, b) => {
   const d = Number(b.data.destacado) - Number(a.data.destacado);

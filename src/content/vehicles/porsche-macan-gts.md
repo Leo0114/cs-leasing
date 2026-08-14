@@ -10,7 +10,8 @@ transmision: Automática
 combustible: Gasolina
 slug: porsche-macan-gts
 descripcion: Porsche Macan GTS 2024. El SUV compacto más dinámico de su segmento. Con su motor 2.9L biturbo de 440 HP, ofrece un manejo apasionante y una estética agresiva y deportiva.
-destacado: true
+destacado: false
+disponible: false
 equipamiento:
   - Motor 2.9L V6 biturbo de 440 HP
   - Transmisión PDK de 7 velocidades

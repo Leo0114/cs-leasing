@@ -11,6 +11,7 @@ combustible: Gasolina
 slug: mercedes-benz-gle-53-amg
 descripcion: Mercedes-Benz GLE 53 AMG 2023, una SUV deportiva que combina lujo, tecnología y alto rendimiento. Motor turbo con tecnología híbrida suave, tracción integral 4MATIC+ y un diseño imponente que roba miradas en cada trayecto.
 destacado: true
+disponible: true
 equipamiento:
   - Motor Turbo de alto desempeño
   - Tracción integral 4MATIC+

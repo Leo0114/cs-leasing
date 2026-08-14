@@ -11,6 +11,7 @@ combustible: Gasolina
 slug: porsche-cayenne-s
 descripcion: Porsche Cayenne S 2019, donde el ADN de un deportivo se encuentra con la versatilidad de una SUV. Rendimiento excepcional, lujo interior y un manejo inigualable característico de la marca alemana.
 destacado: false
+disponible: true
 equipamiento:
   - Motor V6 biturbo
   - Tracción integral Porsche Traction Management

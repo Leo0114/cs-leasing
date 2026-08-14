@@ -11,6 +11,7 @@ combustible: Gasolina
 slug: porsche-cayenne-gts-coupe
 descripcion: Porsche Cayenne GTS Coupé 2021. La silueta más atractiva se une a un poderoso motor V8 de 4.0L. Un vehículo impresionante que domina tanto el asfalto como las miradas.
 destacado: true
+disponible: true
 equipamiento:
   - Motor V8 4.0L biturbo
   - Diseño de carrocería Coupé

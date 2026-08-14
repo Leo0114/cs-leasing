@@ -10,7 +10,8 @@ transmision: Automática
 combustible: Gasolina
 slug: mazda-cx-30
 descripcion: Mazda CX-30 2024. Único dueño, en excelente estado estético y mecánico. Interiores premium, excelente desempeño con su motor 2.5L y la mejor tecnología en conectividad y seguridad.
-destacado: true
+destacado: false
+disponible: false
 equipamiento:
   - Motor 2.5L de excelente desempeño
   - Pantalla de 10” con Apple CarPlay y Android Auto inalámbrico
