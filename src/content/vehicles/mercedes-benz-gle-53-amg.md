@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/MERCEDESBENZGLE53AMG.webp
 precio: 1330000
 marca: Mercedes-Benz
 modelo: GLE
@@ -19,7 +19,7 @@ equipamiento:
   - Asientos deportivos en piel
   - Cámara 360° y sensores de reversa
   - Techo panorámico
-galeria: one
+galeria: mercedesbenzgle53AMG
 ---
 
 El **Mercedes-Benz GLE 53 AMG 2023** redefine la experiencia de manejar una SUV premium. Con su motor turbo y asistencia eléctrica EQ Boost, entrega una potencia excepcional y una respuesta inmediata, manteniendo un equilibrio perfecto entre deportividad y eficiencia.

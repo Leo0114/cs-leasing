@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/porschecayennesgts2021.webp
 precio: 1695000
 marca: Porsche
 modelo: Cayenne Coupé
@@ -19,7 +19,7 @@ equipamiento:
   - Interior en Race-Tex y piel
   - Sistema de sonido premium
   - Rines de 21" RS Spyder
-galeria: one
+galeria: porschecayennesgts2021
 ---
 
 La **Porsche Cayenne GTS Coupé 2021** redefine la agresividad y el estilo. Su silueta de techo descendente le otorga una apariencia sumamente atlética, mientras que bajo el cofre esconde un majestuoso motor V8 de 4.0 litros que emite un rugido inconfundible y embriagador.

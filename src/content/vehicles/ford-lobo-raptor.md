@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/fordLoboRaptor.webp
 precio: 700000
 marca: Ford
 modelo: Lobo
@@ -19,7 +19,7 @@ equipamiento:
   - Llantas todoterreno
   - Modos de manejo (incluye modo Baja)
   - Interiores con detalles exclusivos Raptor
-galeria: one
+galeria: fordloboraptor2018
 ---
 
 La **Ford Lobo Raptor 2018** no necesita presentación; es una bestia nacida para devorar cualquier terreno. Inspirada en los vehículos de la Baja 1000, cuenta con una suspensión ensanchada y amortiguadores de alto desempeño FOX que le permiten absorber impactos increíbles a altas velocidades fuera del asfalto.

@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/BMXX5M50i2021.webp
 precio: 837000
 marca: BMW
 modelo: X5
@@ -19,7 +19,7 @@ equipamiento:
   - Sistema de sonido Harman Kardon
   - Head-Up Display
   - Asientos deportivos en piel Vernasca
-galeria: one
+galeria: BMXX5M50i2021
 ---
 
 El **BMW X5 M50i 2021** es "El Jefe" (The Boss) de su categoría. Con prestaciones puestas a punto por BMW M GmbH, ofrece un empuje brutal gracias a su potente motor V8 TwinPower Turbo, convirtiendo los viajes en carretera en experiencias llenas de adrenalina, sin perder ni un ápice de refinamiento.

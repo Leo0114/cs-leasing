@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/porschemacanturbo2020.webp
 precio: 800000
 marca: Porsche
 modelo: Macan
@@ -19,7 +19,7 @@ equipamiento:
   - Rines deportivos
   - Sistema PCM con navegación
   - Asientos eléctricos
-galeria: one
+galeria: porschemacansturbo2020
 ---
 
 El **Porsche Macan S 2020** combina a la perfección proporciones compactas con un corazón de altas prestaciones. Su motor V6 turbo de 3.0 litros garantiza una aceleración vigorosa y recuperaciones contundentes, siempre gestionadas de forma magistral por su rápida transmisión PDK.

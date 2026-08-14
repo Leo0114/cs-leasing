@@ -1,5 +1,5 @@
 ---
-foto: ../../assets/car.webp
+foto: ../../assets/porschecayennes2019.webp
 precio: 915000
 marca: Porsche
 modelo: Cayenne
@@ -19,7 +19,7 @@ equipamiento:
   - Rines de aleación ligera
   - Faros LED
   - Modos de manejo seleccionables
-galeria: one
+galeria: porschecayennes2019
 ---
 
 La **Porsche Cayenne S 2019** combina magistralmente la comodidad de un vehículo familiar con el espíritu indomable de un deportivo de Stuttgart. Su potente motor asegura aceleraciones que te pegarán al asiento, mientras que su sofisticada suspensión mantiene el control absoluto en cualquier camino.
