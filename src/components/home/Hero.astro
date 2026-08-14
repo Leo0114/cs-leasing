@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Button from "@/components/ui/Button.astro";
-import car from "@/assets/car.webp";
+import image from "@/assets/images/gal/fordloboraptor2018/ford lobo raptor 2018 .webp";
 import { whatsappLink } from "@/lib/site";
 
 const wa = whatsappLink("Hola, me interesa conocer su inventario.");
@@ -36,7 +36,7 @@ const wa = whatsappLink("Hola, me interesa conocer su inventario.");
 
     <div class="overflow-hidden rounded-lg border border-border bg-muted">
       <Image
-        src={car}
+        src={image}
         alt="Vehículo seminuevo premium"
         widths={[480, 720, 960]}
         sizes="(min-width: 1024px) 50vw, 100vw"

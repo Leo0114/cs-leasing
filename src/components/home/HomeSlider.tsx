@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade, Navigation } from "swiper/modules";
 import { motion, AnimatePresence } from "framer-motion";
 import { whatsappLink } from "@/lib/site";
-import type { ImageMetadata } from "astro";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,7 +10,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
 interface HomeSliderProps {
-  carImage: ImageMetadata | string;
+  images: string[];
 }
 
 const slidesData = [
@@ -21,29 +20,16 @@ const slidesData = [
     description:
       "Inventario cuidadosamente seleccionado, vehículos verificados y atención personalizada.",
   },
-  // {
-  //   tag: "Calidad Garantizada",
-  //   title: "Financiamiento flexible y a tu medida.",
-  //   description:
-  //     "Opciones de crédito y arrendamiento adaptadas a tus necesidades. Estrena hoy mismo con las mejores tasas.",
-  // },
-  // {
-  //   tag: "Toma a Cuenta",
-  //   title: "Evaluamos tu auto actual al mejor precio.",
-  //   description:
-  //     "Recibimos tu vehículo a cuenta con un proceso rápido, seguro y transparente. Ahorra tiempo y dinero.",
-  // },
   {
     tag: "Atención Exclusiva",
     title: "Comprar tu próximo auto nunca fue tan fácil.",
     description:
       "Consulta el inventario, resuelve tus dudas y recibe atención personalizada en todo momento.",
   },
-];
+] as const;
 
-export default function HomeSlider({ carImage }: HomeSliderProps) {
+export default function HomeSlider({ images }: HomeSliderProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const imageSrc = typeof carImage === "string" ? carImage : carImage.src;
   const wa = whatsappLink("Hola, me interesa conocer su inventario.");
 
   return (
@@ -74,8 +60,8 @@ export default function HomeSlider({ carImage }: HomeSliderProps) {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 w-full h-full select-none pointer-events-none">
                 <img
-                  src={imageSrc}
-                  alt="Fondo de auto seminuevo premium"
+                  src={images[index] ?? images[0]}
+                  alt={slide.tag}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />

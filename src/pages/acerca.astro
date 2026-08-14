@@ -5,7 +5,10 @@ import Hero from "@/components/home/Hero.astro";
 import WhyUs from "@/components/home/WhyUs.astro";
 import TradeIn from "@/components/home/TradeIn.astro";
 import CTA from "@/components/shared/CTA.astro";
-import carImage from "@/assets/car.webp";
+import hero1 from "@/assets/images/hero/hero1.webp";
+import hero2 from "@/assets/images/hero/hero2.webp";
+
+const heroImages = [hero1.src, hero2.src];
 
 const values = [
   {
@@ -48,7 +51,7 @@ const stats = [
   title="Acerca de — C&S Leasing"
   description="Conoce a C&S Leasing: seleccionamos vehículos seminuevos premium con transparencia, calidad y cercanía."
 >
-  <HomeSlider client:load carImage={carImage} />
+  <HomeSlider client:load images={heroImages} />
 
   <Hero />
 
