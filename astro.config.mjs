@@ -14,6 +14,9 @@ import icon from "astro-icon";
 export default defineConfig({
   site: "https://www.cs-leasing.com/",
   output: "static",
+  build: {
+    assets: "astro",
+  },
 
   integrations: [
     react(),
