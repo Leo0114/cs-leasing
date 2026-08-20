@@ -7,14 +7,20 @@ import Badge from "@/components/ui/Badge.astro";
 import Button from "@/components/ui/Button.astro";
 import { currency, number, whatsappLink } from "@/lib/site";
 
-const { slug } = Astro.params;
+export async function getStaticPaths() {
+  const vehicles = await getCollection("vehicles");
+  return vehicles
+    .filter((vehicle) => vehicle.data.disponible)
+    .map((vehicle) => ({
+      params: { slug: vehicle.data.slug },
+      props: { vehicle },
+    }));
+}
 
-// Fetch all vehicles and find the one matching the slug.
-const vehicles = await getCollection("vehicles");
-const vehicle = vehicles.find((v) => v.data.slug === slug);
+const { vehicle } = Astro.props;
 
 if (!vehicle || !vehicle.data.disponible) {
-  return Astro.redirect("/inventario");
+  return Astro.redirect("/");
 }
 
 const v = vehicle.data;
